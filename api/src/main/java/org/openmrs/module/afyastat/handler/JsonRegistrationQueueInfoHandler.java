@@ -71,13 +71,13 @@ public class JsonRegistrationQueueInfoHandler implements QueueInfoHandler {
 	
 	private StreamProcessorException queueProcessorException;
 	
-	public static final String NEXT_OF_KIN_ADDRESS = "fc0bdd0c-bff4-4a17-b96e-a9270036d71e";
+	public static final String NEXT_OF_KIN_ADDRESS = "a657a4f1-9c0f-444b-a1fd-445bb91dd12d";
 	
 	public static final String NEXT_OF_KIN_CONTACT = "a657a4f1-9c0f-444b-a1fd-445bb91dd12d";
 	
 	public static final String NEXT_OF_KIN_NAME = "72a75bec-1359-11df-a1f1-0026b9348838";
 	
-	public static final String NEXT_OF_KIN_RELATIONSHIP = "b8e2b31b-6cee-4ac6-8790-c40308647c57";
+	public static final String NEXT_OF_KIN_RELATIONSHIP = "a657a4f1-9c0f-444b-a1fd-445bb91dd12d";
 	
 	public static final String SUBCHIEF_NAME = "72a75bec-1359-11df-a1f1-0026b9348838";
 	
@@ -85,13 +85,13 @@ public class JsonRegistrationQueueInfoHandler implements QueueInfoHandler {
 	
 	public static final String EMAIL_ADDRESS = "2f65dbcb-3e58-45a3-8be7-fd1dc9aa0faa";
 	
-	public static final String ALTERNATE_PHONE_CONTACT = "c725f524-c14a-4468-ac19-4a0e6661c930";
+	public static final String ALTERNATE_PHONE_CONTACT = "72a759a8-1359-11df-a1f1-0026b9348838";
 	
-	public static final String NEAREST_HEALTH_CENTER = "254e3b6a-eeec-4714-9c5f-776cc4d30191";
+	public static final String NEAREST_HEALTH_CENTER = "8d87236c-c2cc-11de-8d13-0010c6dffd0f";
 	
-	public static final String GUARDIAN_FIRST_NAME = "72a75bec-1359-11df-a1f1-0026b9348838";
+	public static final String GUARDIAN_FIRST_NAME = "48876f06-7493-416e-855d-8413d894ea93";
 	
-	public static final String GUARDIAN_LAST_NAME = "fc0bdd0c-bff4-4a17-b96e-a9270036d71e";
+	public static final String GUARDIAN_LAST_NAME = "bb8684a5-ac0b-4c2c-b9a5-1203e99952c2";
 	
 	@Override
 	public void process(final AfyaStatQueueData queueData) throws StreamProcessorException {

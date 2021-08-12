@@ -329,7 +329,7 @@ public class JsonPeerCalenderEncounterQueueDataHandler implements QueueInfoHandl
 		if (form == null) {
 			log.info("Unable to find form using the uuid: " + formUuid + ". Setting the form field to null!");
 			String encounterTypeString = JsonFormatUtils.readAsString(encounterPayload,
-			    "$['encounter']['encounter.type_id']");
+			    "$['encounter']['encounter.setup_config_uuid']");
 			int encounterTypeId = NumberUtils.toInt(encounterTypeString, -999);
 			EncounterType encounterType = Context.getEncounterService().getEncounterType(encounterTypeId);
 			if (encounterType == null) {

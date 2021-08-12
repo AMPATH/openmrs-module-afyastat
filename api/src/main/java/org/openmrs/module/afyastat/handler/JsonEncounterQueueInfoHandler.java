@@ -29,6 +29,7 @@ import org.openmrs.module.afyastat.exception.StreamProcessorException;
 import org.openmrs.module.afyastat.model.AfyaStatQueueData;
 import org.openmrs.module.afyastat.model.RegistrationInfo;
 import org.openmrs.module.afyastat.model.handler.QueueInfoHandler;
+import org.openmrs.module.afyastat.util.Utils;
 import org.openmrs.module.afyastat.utils.JsonFormatUtils;
 import org.openmrs.module.afyastat.utils.PatientLookUpUtils;
 
@@ -334,7 +335,7 @@ public class JsonEncounterQueueInfoHandler implements QueueInfoHandler {
 			int encounterTypeId = NumberUtils.toInt(encounterTypeString, -999);
 			log.error("Encounter type " + encounterTypeId);
 			log.error("Encounter type "
-			        + JsonFormatUtils.readAsString(encounterPayload, "$['encounter']['encounter.type_id']"));
+			        + JsonFormatUtils.readAsString(encounterPayload, "$['encounter']['encounter.setup_config_uuid']"));
 			
 			EncounterType encounterType = Context.getEncounterService().getEncounterTypeByUuid(encounterTypeString);
 			if (encounterType == null) {
@@ -428,7 +429,7 @@ public class JsonEncounterQueueInfoHandler implements QueueInfoHandler {
 		visit.setStopDatetime(getLastMomentOfDay(encounter.getEncounterDatetime()));
 		visit.setLocation(encounter.getLocation());
 		visit.setPatient(encounter.getPatient());
-		visit.setVisitType(Context.getVisitService().getVisitTypeByUuid("1d697d92-a000-11ea-b1a0-d0577bb73cd4"));
+		visit.setVisitType(Context.getVisitService().getVisitTypeByUuid(Utils.HTS_VISIT_TYPE_UUID));
 		
 		//		VisitAttribute sourceAttr = new VisitAttribute();
 		//		sourceAttr.setAttributeType(Context.getVisitService().getVisitAttributeTypeByUuid(VISIT_SOURCE_FORM));

@@ -337,10 +337,10 @@ public class MedicDataExchange {
 		encounter.put("encounter.provider_id_select", providerId != null ? providerId : " ");
 		encounter.put("encounter.provider_id", providerId != null ? providerId : " ");
 		encounter.put("encounter.encounter_datetime", convertTime(longDate));
-		encounter.put("encounter.form_uuid", "dfac3ba8-1350-11df-a1f1-0026b9348838");
+		encounter.put("encounter.form_uuid", Utils.HTS_FORM_UUID);
 		encounter.put("encounter.user_system_id", systemId);
 		encounter.put("encounter.device_time_zone", "Africa\\/Nairobi");
-		encounter.put("encounter.setup_config_uuid", "df555734-1350-11df-a1f1-0026b9348838");
+		encounter.put("encounter.setup_config_uuid", Utils.HTS_ENCOUNTER_UUID);
 
 		registrationWrapper.put("patient", patientNode);
 		registrationWrapper.put("observation", obs);
@@ -1695,10 +1695,10 @@ public class MedicDataExchange {
 		encounter.put("encounter.provider_id_select", providerId != null ? providerId : " ");
 		encounter.put("encounter.provider_id", providerId != null ? providerId : " ");
 		encounter.put("encounter.encounter_datetime", convertTime(jsonNode.get("reported_date").getLongValue()));
-		encounter.put("encounter.form_uuid", "dfac3ba8-1350-11df-a1f1-0026b9348838");
+		encounter.put("encounter.form_uuid", Utils.HTS_FORM_UUID);
 		encounter.put("encounter.user_system_id", systemId);
 		encounter.put("encounter.device_time_zone", "Africa\\/Nairobi");
-		encounter.put("encounter.setup_config_uuid", "df555734-1350-11df-a1f1-0026b9348838");
+		encounter.put("encounter.setup_config_uuid", Utils.HTS_ENCOUNTER_UUID);
 
 
 		demographicUpdateWrapper.put("patient", patientNode);

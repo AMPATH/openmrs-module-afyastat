@@ -61,7 +61,13 @@ public class Utils {
 	public static final String HTS_INITIAL_TEST = "402dc5d7-46da-42d4-b2be-f43ea4ad87b0";
 	
 	public static final String HTS_CONFIRMATORY_TEST = "b08471f6-0892-4bf7-ab2b-bf79797b8ea4";
-	
+
+	public static final String HTS_FORM_UUID = "930a7089-a7f2-462b-b13c-69d03bfb44c1";
+
+	public static final String HTS_ENCOUNTER_UUID = "5014245b-7cdd-48f1-a278-6672cb91cb87";
+
+	public static final String HTS_VISIT_TYPE_UUID = "1d697d92-a000-11ea-b1a0-d0577bb73cd4";
+
 	public static String fetchRequestBody(BufferedReader reader) {
 		String requestBodyJsonStr = "";
 		try {
